@@ -3,8 +3,6 @@
 Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerline.omp.json" | Invoke-Expression
 
-$env:POSH_GIT_ENABLED = $true
-
 $PSStyle.FileInfo.Directory = ""
 
 Import-Module -Name Terminal-Icons
