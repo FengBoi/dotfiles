@@ -1,7 +1,7 @@
 # Andy's dotfiles
 
 ## Mac
-- Install zsh, oh-my-zsh and antigen
+- Install oh-my-zsh and antigen
 - Install nvm and node yarn git-cz
 - Install neovim
 - Install fd, fzf
@@ -10,7 +10,7 @@
 - Install zsh, oh-my-zsh and antigen
 - Install nvm and node yarn git-cz
 - Install neovim
-- Install fd, fzf
+- Install fdfind, fzf
 
 ## Windows
 - [Scoop](https://scoop.sh/)
@@ -23,6 +23,7 @@
 
 
 #### TODO
+- Finish off my nvim bullshit
 - Install script for mac 
 - Install script for linux
 - Install script for windows
