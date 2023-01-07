@@ -5,6 +5,7 @@
 - Install nvm and node yarn git-cz
 - Install neovim
 - Install fd, fzf
+- Install alfred to replace spotlight
 
 ## Linux
 - Install zsh, oh-my-zsh and antigen
