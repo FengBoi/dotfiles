@@ -20,6 +20,7 @@
 - [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/)
 - [z](https://www.powershellgallery.com/packages/z)
 - [PSFzf](https://github.com/kelleyma49/PSFzf)
+- [FlowLauncher](https://www.flowlauncher.com/)
 
 
 #### TODO
