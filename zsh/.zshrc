@@ -32,6 +32,9 @@ alias restart="source ~/.zshrc"
 # alias root="su -l root"
 # alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
 
+git config --global user.name "Andy Truong"
+git config --global user.email "andytruong1997@hotmail.com"
+
 export USER='Andy'
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
