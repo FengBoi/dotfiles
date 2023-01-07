@@ -78,7 +78,7 @@ Install-Module -Name PSFzf -Scope CurrentUser -Force
 scoop install flow-launcher
 ```
 
-#### TODO
+## TODO
 - Finish off my nvim bullshit
 - Install script for mac 
 - Install script for linux
