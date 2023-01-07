@@ -7,25 +7,29 @@
 - Install fd, fzf
 - Install alfred to replace spotlight
 
-### Manual Steps
+#### Manual Steps
+zsh oh-my-zsh anti-gen
 ```sh
-# zsh oh-my-zsh anti-gen
-    brew install zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    curl -L git.io/antigen > antigen.zsh
-    cp -a zsh/. ~
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -L git.io/antigen > antigen.zsh
+cp -a zsh/. ~
+```
 
-# nvm node yarn git-cz
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-    nvm install 16
-    nvm alias default 16
-    npm install -g yarn
-    npm install -g git-cz
+nvm node yarn git-cz
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install 16
+nvm alias default 16
+npm install -g yarn
+npm install -g git-cz
+```
 
-# neovim
-    brew install neovim
-    mkdir ~/.config/nvim
-    # add step to move nvim to config folder
+neovim
+```sh
+brew install neovim
+mkdir ~/.config/nvim
+# add step to move nvim to config folder
 ```
 
 ## Linux
@@ -34,32 +38,33 @@
 - Install neovim
 - Install fdfind, fzf
 
-### Manual Steps
+#### Manual Steps
+zsh oh-my-zsh anti-gen
 ```sh
-# zsh oh-my-zsh anti-gen
-    apt install zsh 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    curl -L git.io/antigen > antigen.zsh
-    cp -a zsh/. ~
+apt install zsh 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -L git.io/antigen > antigen.zsh
+cp -a zsh/. ~
+```
 
-# nvm node yarn git-cz
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-    nvm install 16
-    nvm alias default 16
-    npm install -g yarn
-    npm install -g git-cz
+nvm node yarn git-cz
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install 16
+nvm alias default 16
+npm install -g yarn
+npm install -g git-cz
+```
 
-# neovim - might vary
-    sudo apt-get install software-properties-common
-    sudo add-apt-repository ppa:neovim-ppa/stable
-    sudo apt-get update
-    sudo apt-get install neovim
+neovim - might vary
+```sh
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
 
-    mkdir ~/.config/nvim
-    # add step to move nvim to config folder
-
-
-
+mkdir ~/.config/nvim
+# add step to move nvim to config folder
 ```
 
 ## Windows
@@ -72,9 +77,11 @@
 - [PSFzf](https://github.com/kelleyma49/PSFzf)
 - [FlowLauncher](https://www.flowlauncher.com/)
 
-### Manual Steps
-```sh
-
+#### Manual Steps
+scoop
+```pwsh
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
 ```
 
 
