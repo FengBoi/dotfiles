@@ -1,12 +1,6 @@
 # Andy's dotfiles
 
 ## Mac
-- Install oh-my-zsh and antigen
-- Install nvm and node yarn git-cz
-- Install neovim
-- Install fd, fzf
-- Install alfred to replace spotlight
-
 #### Manual Steps
 zsh oh-my-zsh anti-gen
 ```sh
@@ -33,11 +27,6 @@ mkdir ~/.config/nvim
 ```
 
 ## Linux
-- Install zsh, oh-my-zsh and antigen
-- Install nvm and node yarn git-cz
-- Install neovim
-- Install fdfind, fzf
-
 #### Manual Steps
 zsh oh-my-zsh anti-gen
 ```sh
