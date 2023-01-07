@@ -1,12 +1,17 @@
 # Andy's dotfiles
 
-## TODO
-- Need to make two configs (Mac and Linux) 
+## Mac / Linux
+- Install zsh, oh-my-zsh and antigen
+- Install nvm and node yarn git-cz
+- Install neovim
+- Install fd, fzf
 
-- Add steps for checking and installing zsh oh-my-zsh and antigen
-- Copy the .zshrc and .zshrc_functions over
-- Source .zshrc
+## Windows
+- 
 
-- Get node, nvm and yarn
 
-- Nvim stuff
+
+#### TODO
+- Install script for mac 
+- Install script for linux
+- Install script for windows
