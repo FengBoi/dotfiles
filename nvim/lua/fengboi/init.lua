@@ -1,0 +1,1 @@
+require("fengboi.plugins-setup")
