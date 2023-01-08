@@ -22,8 +22,8 @@ npm install -g git-cz
 neovim
 ```sh
 brew install neovim
-mkdir ~/.config/nvim
-# add step to move nvim to config folder
+mkdir ~/.config/
+cp -R nvim ~/.config
 ```
 
 ## Linux
@@ -52,8 +52,8 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 
-mkdir ~/.config/nvim
-# add step to move nvim to config folder
+mkdir ~/.config/
+cp -R nvim ~/.config
 ```
 
 ## Windows
