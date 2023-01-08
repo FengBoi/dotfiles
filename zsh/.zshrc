@@ -33,7 +33,7 @@ alias restart="source ~/.zshrc"
 # alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
 
 git config --global user.name "Andy Truong"
-git config --global user.email "andytruong1997@hotmail.com"
+git config --global user.email "41940068+FengBoi@users.noreply.github.com"
 
 export USER='Andy'
 prompt_context() {
