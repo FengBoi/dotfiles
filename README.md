@@ -26,6 +26,12 @@ mkdir ~/.config/
 cp -R nvim ~/.config
 ```
 
+final stuff
+```sh
+brew install fd
+brew install fzf
+```
+
 ## Linux
 #### Manual Steps
 zsh oh-my-zsh anti-gen
