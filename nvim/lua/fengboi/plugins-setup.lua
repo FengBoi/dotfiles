@@ -36,8 +36,8 @@ return packer.startup(function(use)
   use("nvim-tree/nvim-web-devicons")
 
   -- window management
-  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-  use("szw/vim-maximizer") -- maximizes and restores current window
+  use("christoomey/vim-tmux-navigator")
+  use("szw/vim-maximizer")
 
   use("numToStr/Comment.nvim") -- gcc to comment a line and gc number then (j or k)
 
@@ -69,15 +69,15 @@ return packer.startup(function(use)
   use("williamboman/mason-lspconfig.nvim")
 
   -- configuring lsp servers
-  use("neovim/nvim-lspconfig") -- easily configure language servers
-  use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-  use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-  use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+  use("neovim/nvim-lspconfig") 
+  use("hrsh7th/cmp-nvim-lsp") 
+  use({ "glepnir/lspsaga.nvim", branch = "main" })
+  use("jose-elias-alvarez/typescript.nvim")
+  use("onsails/lspkind.nvim")
 
   -- formatting & linting
-  use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-  use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+  use("jose-elias-alvarez/null-ls.nvim")
+  use("jayp0521/mason-null-ls.nvim")
   
   use({
     "nvim-treesitter/nvim-treesitter",
@@ -88,11 +88,11 @@ return packer.startup(function(use)
   })
 
   -- auto closing
-  use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+  use("windwp/nvim-autopairs")
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 
   -- git integration
-  use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("lewis6991/gitsigns.nvim") 
 
   if packer_bootstrap then
     require("packer").sync()
