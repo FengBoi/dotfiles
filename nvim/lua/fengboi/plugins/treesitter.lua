@@ -14,10 +14,8 @@ treesitter.setup({
     "tsx",
     "html",
     "css",
-    "markdown",
     "bash",
     "lua",
-    "python"
     "vim",
     "dockerfile",
     "gitignore",

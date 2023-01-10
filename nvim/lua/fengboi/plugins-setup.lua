@@ -41,13 +41,12 @@ return packer.startup(function(use)
 
   use("numToStr/Comment.nvim") -- gcc to comment a line and gc number then (j or k)
 
-  -- not usable until 0.8 :(
-  -- use("nvim-tree/nvim-tree.lua")
-  -- use("nvim-tree/nvim-web-devicons")
+  use("nvim-tree/nvim-tree.lua")
 
-  use("preservim/nerdtree")
-  use("ryanoasis/vim-devicons")
-
+  -- use this if nvim is sub 0.8
+  -- use("preservim/nerdtree")
+  -- use("ryanoasis/vim-devicons")
+  --
   use("nvim-lualine/lualine.nvim")
 
   -- fuzzy finding w/ telescope
@@ -78,21 +77,11 @@ return packer.startup(function(use)
   -- formatting & linting
   use("jose-elias-alvarez/null-ls.nvim")
   use("jayp0521/mason-null-ls.nvim")
-  
-  use({
-    "nvim-treesitter/nvim-treesitter",
-    run = function()
-      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-      ts_update()
-    end,
-  })
-
-  -- auto closing
   use("windwp/nvim-autopairs")
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
-
-  -- git integration
-  use("lewis6991/gitsigns.nvim") 
+  
+  -- git stuff
+  use("lewis6991/gitsigns.nvim")
 
   if packer_bootstrap then
     require("packer").sync()
