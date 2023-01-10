@@ -1,7 +1,9 @@
 require("fengboi.plugins-setup")
+
 require("fengboi.core.options")
 require("fengboi.core.keymaps")
 require("fengboi.core.colorscheme")
+
 require("fengboi.plugins.comment")
 require("fengboi.plugins.lualine")
 require("fengboi.plugins.nvim-tree")
