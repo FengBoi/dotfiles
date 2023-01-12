@@ -1,9 +1,8 @@
-require("fengboi.plugins-setup")
+require("fengboi.plugin")
+require("fengboi.base")
+require("fengboi.keymaps")
 
-require("fengboi.core.options")
-require("fengboi.core.keymaps")
-require("fengboi.core.colorscheme")
-
+require("fengboi.plugins.colorscheme")
 require("fengboi.plugins.comment")
 require("fengboi.plugins.lualine")
 require("fengboi.plugins.nvim-tree")
@@ -12,6 +11,7 @@ require("fengboi.plugins.nvim-cmp")
 require("fengboi.plugins.autopair")
 require("fengboi.plugins.treesitter")
 require("fengboi.plugins.gitsigns")
+
 require("fengboi.plugins.lsp.mason")
 require("fengboi.plugins.lsp.lspconfig")
 require("fengboi.plugins.lsp.null-ls")
