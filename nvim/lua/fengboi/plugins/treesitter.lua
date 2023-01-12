@@ -1,24 +1,26 @@
-local status, treesitter = pcall(require, "nvim-treesitter.configs")
-if not status then return end
+local status, ts = pcall(require, "nvim-treesitter.configs")
+if (not status) then return end
 
-treesitter.setup({
+ts.setup {
   highlight = {
     enable = true,
+    disable = {},
   },
-  indent = { enable = true },
-  autotag = { enable = true },
+  indent = {
+    enable = true,
+    disable = {},
+  },
   ensure_installed = {
-    "json",
-    "javascript",
-    "typescript",
     "tsx",
-    "html",
     "css",
-    "bash",
+    "html",
     "lua",
-    "vim",
-    "dockerfile",
-    "gitignore",
+    "python"
   },
-  auto_install = true,
-})
+  autotag = {
+    enable = true,
+  },
+}
+
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }

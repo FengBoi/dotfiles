@@ -14,6 +14,7 @@ mason_lspconfig.setup({
     "tsserver",
     "html",
     "cssls",
+    "pyright"
   },
   automatic_installation = true,
 })
