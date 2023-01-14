@@ -11,17 +11,19 @@ else
 fi
 
 if [ -d "${HOME}/.oh-my-zsh" ]; then
-  echo 'oh-my-zsh is installed!' >&2
+  echo 'Oh-My-Zsh is installed!' >&2
 else
-  echo 'Installing Oh-My-Zsh is installed!' >&2 
+  echo 'Installing Oh-My-Zsh!' >&2 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+  echo 'Oh-My-Zsh is installed!' >&2
 fi
 
 if [ -f "${HOME}/antigen.zsh" ]; then
   echo 'antigen is installed!' >&2
 else
-  echo 'Installing antigen is installed!' >&2 
+  echo 'Installing antigen' >&2 
   curl -L git.io/antigen > antigen.zsh;
+  echo 'antigen is installed!' >&2
 fi
 
 echo 'Moving zsh dotfiles....' >&2
