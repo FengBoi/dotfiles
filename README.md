@@ -2,11 +2,13 @@
 
 ## Mac Install
 ```sh
+chmod +x ./mac_install.sh
 ./mac_install.sh
 ```
 
 ## Linux Install
 ```sh
+chmod +x ./linux_install.sh
 ./linux_install.sh
 ```
 
