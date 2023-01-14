@@ -10,14 +10,14 @@ else
   brew install zsh
 fi
 
-if [ -f "~/.oh-my-zsh" ]; then
+if [ -d "${HOME}/.oh-my-zsh" ]; then
   echo 'oh-my-zsh is installed!' >&2
 else
   echo 'Installing Oh-My-Zsh is installed!' >&2 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 fi
 
-if [ -f "~/antigen" ]; then
+if [ -f "${HOME}/antigen.zsh" ]; then
   echo 'antigen is installed!' >&2
 else
   echo 'Installing antigen is installed!' >&2 
@@ -25,7 +25,7 @@ else
 fi
 
 echo 'Moving zsh dotfiles....' >&2
-cp zsh/.zshrc .zsh_functions ~/
+cp zsh/.zshrc .zsh_functions ${HOME}/
 
 echo 'Zsh has been installed successfully' >&2
 
@@ -33,7 +33,7 @@ echo '.' >&2
 echo '..' >&2
 echo '...' >&2
 
-if [ -x "$(command -v node)" ]; then
+if [ -d "${HOME}/.nvm" ]; then
   echo 'Nvm is already installed!' >&2
 else 
   echo 'Installing nvm' >&2
@@ -50,11 +50,11 @@ fi
 
 echo 'Setting up neovim!' >&2
 
-if ![ -d "~/.config" ]; then
-    mkdir ~/.config/
+if [ ! -d "${HOME}/.config" ]; then
+    mkdir ${HOME}/.config/
 fi
 
-cp -R nvim ~/.config
+cp -R nvim ${HOME}/.config
 
 echo 'Run "chsh -s $(which zsh)" to set zsh as default shell' >&2
 echo 'Make sure you install node using nvm and get yarn and gcz' >&2
