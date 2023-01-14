@@ -6,6 +6,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/antigen.zsh
 source ~/.zsh_functions
 
+if [ -f "${HOME}/.zshrc_work" ]; then
+  source "${HOME}/.zshrc_work"
+fi
+
 antigen use oh-my-zsh
 
 antigen bundle git
