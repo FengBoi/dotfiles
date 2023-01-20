@@ -27,7 +27,7 @@ else
 fi
 
 echo 'Moving zsh dotfiles....' >&2
-cp zsh/.zshrc .zsh_functions ${HOME}/
+cp zsh/.zshrc zsh/.zsh_functions ${HOME}/
 
 echo 'Zsh has been installed successfully' >&2
 
