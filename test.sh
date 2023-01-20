@@ -3,6 +3,15 @@
 set -o nounset    # error when referencing undefined variable
 set -o errexit    # exit when command fails
 
+echo -e "
+  _____                _           _ 
+ |  ___|__ _ __   __ _| |__   ___ (_)
+ | |_ / _ \ '_ \ / _' | '_ \ / _ \| |
+ |  _|  __/ | | | (_| | |_) | (_) | |
+ |_|  \___|_| |_|\__, |_.__/ \___/|_|
+                 |___/               
+"
+
 if [ -x "$(command -v zsh)" ]; then
   echo 'Zsh is installed!' >&2
 else 
