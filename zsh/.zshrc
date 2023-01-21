@@ -17,6 +17,7 @@ antigen bundle pip
 antigen bundle aws
 antigen bundle web-search
 antigen bundle paulirish/git-open
+antigen bundle agkozak/zsh-z
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -25,16 +26,20 @@ antigen theme agnoster
 
 antigen apply
 
-alias ahhh="nvim ~/.zshrc"
+# Everyday Alias
 alias vim="nvim"
+
+# File Alias
+alias ahhh="nvim ~/.zshrc"
 alias rip="nvim ~/.config/nvim/init.lua"
 alias nvimconfig="cd ~/.config/nvim"
-alias restart="source ~/.zshrc"
 
+# Wsl Alias
 # alias home="cd ~"
 # alias windows="cd /mnt/e"
 # alias root="su -l root"
 
+# Quick edit (Ubuntu or MacOs)
 # alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
 # alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
 
