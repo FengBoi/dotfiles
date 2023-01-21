@@ -15,5 +15,6 @@ require("fengboi.plugins.lsp.null-ls")
 
 require("fengboi.plugins.autopair")
 require("fengboi.plugins.treesitter")
+require("fengboi.plugins.bufferline")
 require("fengboi.plugins.gitsigns")
 

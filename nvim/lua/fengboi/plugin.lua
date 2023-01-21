@@ -90,6 +90,8 @@ return packer.startup(function(use)
   use("windwp/nvim-autopairs")
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
   
+  use('akinsho/nvim-bufferline.lua')
+  
   -- git stuff
   use("lewis6991/gitsigns.nvim")
 

@@ -27,13 +27,18 @@ keymap.set("n", "<leader>s-", ":close<CR>") -- close current split window
 
 keymap.set("n", "<leader>t=", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>t-", ":tabclose<CR>") -- close current tab
+
 keymap.set("n", "<leader>t.", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>t,", ":tabp<CR>") --  go to previous tab
+
+keymap.set("n", "<leader>tl", ":tabn<CR>") --  go to next tab
+keymap.set("n", "<leader>th", ":tabp<CR>") --  go to previous tab
+
 
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
-keymap.set("n", "<leader>f", ":NvimTreeFocus<CR>") -- toggle file explorer
+keymap.set("n", "<leader>r", ":NvimTreeFocus<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
