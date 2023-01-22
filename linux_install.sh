@@ -31,7 +31,7 @@ if [ -f "${HOME}/antigen.zsh" ]; then
   echo 'antigen is installed!' >&2
 else
   echo 'Installing antigen' >&2 
-  curl -L git.io/antigen > antigen.zsh;
+  curl -L git.io/antigen > antigen.zsh
   echo 'antigen is installed!' >&2
 fi
 
