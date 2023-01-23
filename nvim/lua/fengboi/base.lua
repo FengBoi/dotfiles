@@ -28,3 +28,5 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 opt.iskeyword:append("_")
+
+vim.g.nightflyItalics = false
