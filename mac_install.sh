@@ -31,7 +31,7 @@ if [ -f "${HOME}/antigen.zsh" ]; then
   echo 'antigen is installed!' >&2
 else
   echo 'Installing antigen' >&2 
-  curl -L git.io/antigen > antigen.zsh;
+  curl -L git.io/antigen > ${HOME}/antigen.zsh;
   echo 'antigen is installed!' >&2
 fi
 
@@ -39,10 +39,6 @@ echo 'Moving zsh dotfiles....' >&2
 cp zsh/.zshrc zsh/.zsh_functions ${HOME}/
 
 echo 'Zsh has been installed successfully' >&2
-
-echo '.' >&2
-echo '..' >&2
-echo '...' >&2
 
 if [ -d "${HOME}/.nvm" ]; then
   echo 'Nvm is already installed!' >&2
