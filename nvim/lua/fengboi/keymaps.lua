@@ -6,6 +6,7 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>jk", ":nohl<CR>")
 
+-- move lines with alt
 keymap.set("n", "<A-j>", ":m .+1<CR>==")
 keymap.set("n", "<A-k>", ":m .-2<CR>==")
 
@@ -14,6 +15,12 @@ keymap.set("i", "<A-k>", "<Esc>:m .-2<CR>==gi")
 
 keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
 keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
+
+-- good searching stuff
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
 
 --increment stuff
 keymap.set("n", "<leader>+", "<C-a>")
