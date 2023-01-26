@@ -63,5 +63,21 @@ fi
 
 cp -R nvim ${HOME}/.config
 
+if [ -x "$(command -v tmux)" ]; then
+  echo 'Tmux is installed!' >&2
+else 
+  echo 'Installing tmux....' >&2
+  brew install tmux
+fi
+
+if [ -d "${HOME}/.tmux" ]; then
+  echo 'Tmux plugins folder is detected!' >&2
+else
+  echo 'Installing Tmux plugins manager!' >&2 
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+cp tmux/.tmux.conf ${HOME}/
+
 echo 'Run "chsh -s $(which zsh)" to set zsh as default shell' >&2
 echo 'Make sure you install node using nvm and get yarn and gcz' >&2
