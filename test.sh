@@ -41,5 +41,17 @@ else
   echo 'You dont have neovim!' >&2
 fi
 
+if [ -x "$(command -v tmux)" ]; then
+  echo 'Tmux is installed!' >&2
+else 
+  echo 'Tmux is not install!' >&2
+fi
+
+if [ -d "${HOME}/.tmux" ]; then
+  echo 'Tmux plugins folder detected!' >&2
+else 
+  echo 'Tmux plugins needs to be installed' >&2
+fi
+
 
 echo 'Test script is now complete!' >&2
