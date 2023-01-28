@@ -40,13 +40,7 @@ return packer.startup(function(use)
   use("szw/vim-maximizer") -- maximizes and restores current window
 
   use("numToStr/Comment.nvim") -- gcc to comment a line and gc number then (j or k)
-
-  -- not usable until 0.8 :(
   use("nvim-tree/nvim-tree.lua")
-
-  -- use("preservim/nerdtree")
-  -- use("ryanoasis/vim-devicons")
-  --
   use("nvim-lualine/lualine.nvim")
 
   -- fuzzy finding w/ telescope
@@ -68,15 +62,15 @@ return packer.startup(function(use)
   use("williamboman/mason-lspconfig.nvim")
 
   -- configuring lsp servers
-  use("neovim/nvim-lspconfig") -- easily configure language servers
-  use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-  use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-  use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+  use("neovim/nvim-lspconfig")
+  use("hrsh7th/cmp-nvim-lsp")
+  use({ "glepnir/lspsaga.nvim", branch = "main" })
+  use("jose-elias-alvarez/typescript.nvim")
+  use("onsails/lspkind.nvim")
 
   -- formatting & linting
-  use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-  use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+  use("jose-elias-alvarez/null-ls.nvim")
+  use("jayp0521/mason-null-ls.nvim")
 
 
   use({
