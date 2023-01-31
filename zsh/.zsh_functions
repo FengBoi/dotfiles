@@ -1,9 +1,13 @@
 go() {
- { cd ~/code/$1 } || {
-  echo These are the valid directories && ls ~/code/
- }
+  { cd ~/code/$1 } || {
+    echo These are the valid directories && ls ~/code/
+  }
 }
 
 reactts() {
- yarn create react-app $1 --template typescript
+  yarn create react-app $1 --template typescript
+}
+
+eslint() {
+  npm init @eslint/config
 }
