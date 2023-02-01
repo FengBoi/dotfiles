@@ -4,6 +4,7 @@ opt.relativenumber = true
 opt.number = true
 
 opt.mouse = 'a' 
+opt.title = true
 
 opt.tabstop = 2
 opt.shiftwidth = 2

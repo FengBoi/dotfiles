@@ -89,6 +89,9 @@ return packer.startup(function(use)
   -- git stuff
   use("lewis6991/gitsigns.nvim")
 
+  -- testing
+  use ('stevearc/aerial.nvim')
+
   if packer_bootstrap then
     require("packer").sync()
   end
