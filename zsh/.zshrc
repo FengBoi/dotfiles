@@ -39,8 +39,8 @@ alias nvimconfig="cd ~/.config/nvim"
 # alias root="su -l root"
 
 # Quick edit (Ubuntu or MacOs)
-# alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
-# alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
+# alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p90% --preview 'batcat --color=always {}' | xargs -r nvim"
+# alias v="fd --type f --hidden --exclude .git | fzf-tmux -p90% --preview 'batcat --color=always {}' --pointer="" | xargs -r nvim"
 
 alias checkout="git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git checkout"
 alias delete_branch="git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git branch -delete"
