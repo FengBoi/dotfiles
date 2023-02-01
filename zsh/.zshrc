@@ -42,6 +42,9 @@ alias nvimconfig="cd ~/.config/nvim"
 # alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
 # alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs -r nvim"
 
+alias checkout="git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git checkout"
+alias delete_branch="git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git branch -delete"
+
 git config --global user.name "Fengboi"
 git config --global user.email "41940068+FengBoi@users.noreply.github.com"
 
