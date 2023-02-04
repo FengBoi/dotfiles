@@ -1,5 +1,3 @@
-. "$HOME/.cargo/env"
-
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_DEFAULT_SESSION_NAME="Main"
 
