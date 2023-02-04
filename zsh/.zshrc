@@ -14,6 +14,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle aws
+antigen bundle tmux
 antigen bundle web-search
 antigen bundle paulirish/git-open
 antigen bundle agkozak/zsh-z
@@ -21,7 +22,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme agnoster
-# antigen theme gozilla
 
 antigen apply
 
