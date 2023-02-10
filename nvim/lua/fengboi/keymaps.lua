@@ -56,4 +56,4 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- git stuff
 keymap.set("n", "<leader>ga", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
-keymap.set("n", "<leader>g", ":Gitsigns toggle_current_line_blame<CR>")
+keymap.set("n", "<leader>gb", ":Gitsigns toggle_current_line_blame<CR>")

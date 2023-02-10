@@ -4,7 +4,7 @@ go() {
 
 checkout() {
   git branch --sort=-committerdate | 
-  fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | 
+  fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" | 
   xargs git checkout
 }
 
@@ -17,7 +17,7 @@ remote() {
 
 delete_branch() { 
   git branch --sort=-committerdate | 
-  fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | 
+  fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" | 
   xargs git branch -delete
 }
 
