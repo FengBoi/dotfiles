@@ -19,7 +19,7 @@ else
   sudo apt install zsh
 fi
 
-if [ -f "${HOME}/.antidote" ]; then
+if [ -d "${HOME}/.antidote" ]; then
   echo 'antidote is installed!' >&2
 else
   echo 'Installing antidote' >&2 
