@@ -1,29 +1,14 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="$HOME/.oh-my-zsh"
 
-source $ZSH/oh-my-zsh.sh
-source ~/antigen.zsh
 source ~/.zsh_functions
 
 if [ -f "${HOME}/.zshrc_work" ]; then
   source "${HOME}/.zshrc_work"
 fi
 
-antigen use oh-my-zsh
-
-antigen bundle git
-antigen bundle pip
-antigen bundle aws
-antigen bundle tmux
-antigen bundle web-search
-antigen bundle paulirish/git-open
-antigen bundle agkozak/zsh-z
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen theme agnoster
-
-antigen apply
+# Antidote
+source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+antidote load
 
 # Everyday Alias
 alias vim="nvim"
@@ -50,6 +35,10 @@ prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
+}
+
+prompt_dir() {
+  prompt_segment blue $CURRENT_FG '%c'
 }
 
 export NVM_DIR="$HOME/.nvm"
