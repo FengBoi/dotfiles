@@ -19,24 +19,16 @@ else
   brew install zsh
 fi
 
-if [ -d "${HOME}/.oh-my-zsh" ]; then
-  echo 'Oh-My-Zsh is installed!' >&2
+if [ -f "${HOME}/.antidote" ]; then
+  echo 'antidote is installed!' >&2
 else
-  echo 'Installing Oh-My-Zsh!' >&2 
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-  echo 'Oh-My-Zsh is installed!' >&2
-fi
-
-if [ -f "${HOME}/antigen.zsh" ]; then
-  echo 'antigen is installed!' >&2
-else
-  echo 'Installing antigen' >&2 
-  curl -L git.io/antigen > ${HOME}/antigen.zsh;
-  echo 'antigen is installed!' >&2
+  echo 'Installing antidote' >&2 
+  brew install antidote
+  echo 'antidote is installed!' >&2
 fi
 
 echo 'Moving zsh dotfiles....' >&2
-cp zsh/.zshrc zsh/.zsh_functions ${HOME}/
+cp zsh/.zshrc zsh/.zsh_functions zsh/.zsh_plugins.txt ${HOME}/
 
 echo 'Zsh has been installed successfully' >&2
 
