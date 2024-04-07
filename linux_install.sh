@@ -10,6 +10,7 @@ echo -e "
  |  _|  __/ | | | (_| | |_) | (_) | |
  |_|  \___|_| |_|\__, |_.__/ \___/|_|
                  |___/               
+This was made by a dumbass named Andy
 "
 
 if [ -x "$(command -v zsh)" ]; then
