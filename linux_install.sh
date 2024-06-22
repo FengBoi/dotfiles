@@ -28,7 +28,7 @@ else
 fi
 
 echo 'Moving zsh dotfiles....' >&2
-cp zsh/.zshrc zsh/.zsh_functions zsh/.zsh_plugins.txt ${HOME}/
+cp zsh/.zshrc zsh/.zsh_functions zsh/.zsh_plugins.txt zsh/.p10k.zsh ${HOME}/
 
 echo 'Zsh has been installed successfully' >&2
 
@@ -40,23 +40,23 @@ else
   echo 'Nvm has now been installed' >&2
 fi
 
-if [ -x "$(command -v nvim)" ]; then
-  echo 'Neovim is already installed!' >&2
-else 
-  echo 'Installing latest version of neovim' >&2
-  sudo apt-get install software-properties-common
-  sudo add-apt-repository ppa:neovim-ppa/unstable
-  sudo apt-get update
-  sudo apt-get install neovim
-fi
+# if [ -x "$(command -v nvim)" ]; then
+#   echo 'Neovim is already installed!' >&2
+# else 
+#   echo 'Installing latest version of neovim' >&2
+#   sudo apt-get install software-properties-common
+#   sudo add-apt-repository ppa:neovim-ppa/unstable
+#   sudo apt-get update
+#   sudo apt-get install neovim
+# fi
 
-echo 'Setting up neovim!' >&2
+# echo 'Setting up neovim!' >&2
 
-if [ ! -d "${HOME}/.config" ]; then
-    mkdir ${HOME}/.config/
-fi
+# if [ ! -d "${HOME}/.config" ]; then
+#     mkdir ${HOME}/.config/
+# fi
 
-cp -R nvim ${HOME}/.config
+# cp -R nvim ${HOME}/.config
 
 if [ -x "$(command -v tmux)" ]; then
   echo 'Tmux is installed!' >&2
