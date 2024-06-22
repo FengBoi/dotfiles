@@ -9,5 +9,5 @@ zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
 
-ohmyzsh/ohmyzsh path:themes/agnoster.zsh-theme
+romkatv/powerlevel10k
 
