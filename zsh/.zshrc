@@ -6,6 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_DEFAULT_SESSION_NAME="Main"
 
 source ~/.zsh_functions
 
