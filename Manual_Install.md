@@ -1,4 +1,4 @@
-# Andy's dotfiles
+# Sorzee's dotfiles
 
 ## Mac
 #### Manual Steps
